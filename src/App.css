@@ -1,0 +1,25 @@
+/* App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fondo {
+  @apply
+  min-h-screen
+  flex
+  justify-center
+  items-center
+  bg-no-repeat
+  bg-center
+  bg-cover
+  h-screen
+}
+
+.compTitulo{
+  @apply
+  flex
+  justify-center
+  items-center
+
+}
