@@ -1,11 +1,16 @@
 /*Noticias.jsx*/
 import '../styles.css'
+import Title from '../reusables/Title'
+import BotonHome from '../reusables/BotonHome';
 
 const Noticias = () => {
     return (
-        <div className="bgTry">
-            <h1 className="textoTry1">NOTICIAS</h1>
-        </div>        
+        <html className='fondoPaginas'>
+            <div className='componenteTitlePaginas'>
+                <BotonHome />
+                <div className='margenTitulo'><Title text="NOTICIAS"/></div>
+            </div>
+        </html>
     );
 }
 

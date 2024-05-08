@@ -1,11 +1,16 @@
 /*Multimedia.jsx*/
 import '../styles.css'
+import Title from '../reusables/Title'
+import BotonHome from '../reusables/BotonHome';
 
 const Multimedia = () => {
     return (
-        <div className="bgTry">
-            <h1 className="textoTry1">MULTIMEDIA</h1>
-        </div>        
+        <html className='fondoPaginas'>
+            <div className='componenteTitlePaginas'>
+                <BotonHome />
+                <div className='margenTitulo'><Title text="MULTIMEDIA"/></div>
+            </div>
+        </html>
     );
 }
 

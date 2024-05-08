@@ -3,7 +3,7 @@
 import '../styles.css'
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react'; 
-import Title from './componentes_Home/Title';
+import Title from '../reusables/Title';
 import Escudo from './componentes_Home/Escudo';
 import Boton from '../reusables/Boton';
 
@@ -27,12 +27,11 @@ const Home = () => {
         <div className="h-screen fondo" style={{ backgroundImage: `url(${imageFiles[imageIndex - 1]})` }}>
             <div className="flex flex-col">
                 <div className='compTitulo'>
-                    <Title />
+                    <Title text="UD PARC"/>
                 </div>
                 <div className="flex flex-col compTitulo">
                     <Link to="/noticias"><Boton text="NOTICIAS"/></Link>
                     <Link to="/equipos"><Boton text="EQUIPOS"/></Link>
-                    <Link to="/historia"><Boton text="HISTORIA"/></Link>
                     <Link to="/multimedia"><Boton text="MULTIMEDIA"/></Link>
                     <Link to="/contacto"><Boton text="CONTACTO"/></Link>
                 </div>
