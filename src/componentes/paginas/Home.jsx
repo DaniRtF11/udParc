@@ -1,10 +1,12 @@
 /*Home.jsx*/
 
-import './styles.css'
-import React, { useEffect, useState } from 'react';
-import Title from './Title';
-import Menu from './Menu';
-import Escudo from './Escudo';
+import '../styles.css'
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'; 
+import Title from './componentes_Home/Title';
+import Escudo from './componentes_Home/Escudo';
+import Boton from '../reusables/Boton';
+
 
 const Home = () => {
     const [imageIndex, setImageIndex] = useState(1); // Comenzamos en 1
@@ -27,8 +29,12 @@ const Home = () => {
                 <div className='compTitulo'>
                     <Title />
                 </div>
-                <div>
-                    <Menu />
+                <div className="flex flex-col compTitulo">
+                    <Link to="/noticias"><Boton text="NOTICIAS"/></Link>
+                    <Link to="/equipos"><Boton text="EQUIPOS"/></Link>
+                    <Link to="/historia"><Boton text="HISTORIA"/></Link>
+                    <Link to="/multimedia"><Boton text="MULTIMEDIA"/></Link>
+                    <Link to="/contacto"><Boton text="CONTACTO"/></Link>
                 </div>
                 <div className='compTitulo'>
                     <Escudo />

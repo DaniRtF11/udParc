@@ -1,5 +1,4 @@
-import './styles.css'
-
+import '../../../componentes/styles.css'
 const Title = () => {
     return(
         <div className='fondoTitulo'>

@@ -31,3 +31,15 @@
 .imgEscudo{
     @apply  size-40
 }
+
+.textoTry1{
+    @apply text-orange-500 text-5xl
+}
+
+.textoTry2{
+    @apply text-red-500 text-5xl
+}
+
+.bgTry{
+    @apply bg-green-400
+}
