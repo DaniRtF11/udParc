@@ -5,7 +5,7 @@ import BotonHome from '../reusables/BotonHome';
 
 const Multimedia = () => {
     return (
-        <html className='fondoPaginas'>
+        <html className='fondoPaginas2'>
             <div className='componenteTitlePaginas'>
                 <BotonHome />
                 <div className='margenTitulo'><Title text="MULTIMEDIA"/></div>
