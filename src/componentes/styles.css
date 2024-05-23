@@ -45,6 +45,10 @@
 }
 
 .fondoPaginas{
+    @apply bg-gradient-to-b from-white via-blue-100 to-blue-500 h-full
+}
+
+.fondoPaginas2{
     @apply bg-gradient-to-b from-white via-blue-100 to-blue-500 h-screen
 }
 
@@ -54,4 +58,56 @@
 
 .margenTitulo{
     @apply ml-5
+}
+
+.equipo {
+    @apply h-auto p-4;
+}
+
+.nombreEquipo {
+    @apply text-[#1B1EE0] text-4xl font-bold text-left p-4;
+}
+
+.contenidoEquipo {
+    @apply grid grid-cols-3 gap-4;
+}
+
+.espacioFoto {
+    @apply w-11/12 mx-5 col-span-1;
+}
+
+.fotoEquipo {
+    @apply w-full;
+}
+
+.entrenadores {
+    @apply col-span-1 p-4 w-fit;
+}
+
+.jugadores {
+    @apply col-span-1 p-4 w-fit;
+}
+
+.lista-jugadores {
+    @apply list-disc list-inside;
+}
+
+.formularioContacto {
+    @apply max-w-lg mx-auto p-6 bg-slate-100 bg-opacity-55 rounded-lg shadow-md my-10;
+}
+
+.inputContacto {
+    @apply w-full px-3 py-2 border rounded-lg text-gray-700;
+}
+
+.textareaContacto {
+    @apply w-full px-3 py-2 border rounded-lg text-gray-700 h-32;
+}
+
+.botonContacto {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.contenedorFormulario {
+    @apply flex justify-center mt-8;
 }

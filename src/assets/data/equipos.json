@@ -1,0 +1,64 @@
+[
+  {
+    "nombre": "Aleví S11 'A'",
+    "foto": "/img/equipos/s11a.jpeg",
+    "jugadores": [
+      "1. Adam Moumen Sami Essoulh",
+      "5. Roger Alsina Marin",
+      "13. Marc Mata Pernett",
+      "20. Iyad Berrouaqui",
+      "23. Joaquim Forné Pignatta",
+      "25. Gerard Amaya Arellanos",
+      "31. Zacaria Yahi",
+      "33. Bryan Arredondo Loor",
+      "56. Marc Laurent Lainez",
+      "77. Theo Queiroz"
+    ],
+    "entrenador": "Daniel Ruiz de la Torre Feliu",
+    "segundo": "Manel Codina Fornells",
+    "delegado": "Adrian Mario Serea"
+  },
+  {
+    "nombre": "Aleví S12 'A'",
+    "foto": "/img/equipos/s12a.jpeg",
+    "jugadores": [
+      "7. Izan González Sáchez",
+      "10. Ilan Aouizerate Alvarez",
+      "13. Enak de Lisa Sentis",
+      "20. Ander Monso Mora-Gil",
+      "27. Roc Garcia Navas",
+      "63. Ot Micàs Tarragona",
+      "76. Wassim Tahiri",
+      "77. Nicolás Mayo d'Alisa",
+      "85. Gael Micheli",
+      "90. Sofia Tarrazo Fernandez"
+    ],
+    "entrenador": "Darío de Lisa Suárez",
+    "segundo": "Salva González Jimenez"
+  },
+  {
+    "nombre": "Infantil 'A'",
+    "foto": "/img/equipos/IA.jpeg",
+    "jugadores": [
+      "1. Oriol Herrero Torné",
+      "4. Adrià Montilla MIranda",
+      "5. Marc Amaya Arellanos",
+      "6. Gael Beza Perales",
+      "7. Adam Souiti",
+      "8. Arnau Alsina Marin",
+      "9. Leo Migueiz Calvo",
+      "10. Nabil Haddad Moya",
+      "11. Thiago Ballesteros Souza",
+      "13. Martin Kear Barrionuevo",
+      "14. Alexis Paz Alarcón",
+      "17. Gabriela Sigler Arteaga",
+      "21. Oriol Royo Garcia",
+      "22. Eloi Tormo Ferrer",
+      "30. Isaac Andreu Arredondo Loor",
+      "96. Jordi Campillo de la Rosa",
+      "98. Cesar Denislon Mio Oscco"
+    ],
+    "entrenador": "Daniel Ruiz de la Torre Feliu",
+    "segundo": "Darío de Lisa Suárez"
+  }
+]
