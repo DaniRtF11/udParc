@@ -1,15 +1,15 @@
 // src/componentes/paginas/Contacto.jsx
 import '..//styles.css';
-import Title from '../reusables/Title';
+import TitlePages from '../reusables/TitlePages';
 import BotonHome from '../reusables/BotonHome';
 import FormularioContacto from '../reusables/FormularioContacto.jsx';
 
 const Contacto = () => {
     return (
-        <div className='fondoPaginas'>
+        <div className='fondoPaginas2'>
             <div className='componenteTitlePaginas'>
                 <BotonHome />
-                <div className='margenTitulo'><Title text="CONTACTO" /></div>
+                <div className='margenTitulo'><TitlePages text="CONTACTO" /></div>
             </div>
             <div className='contenedorFormulario'>
                 <FormularioContacto />

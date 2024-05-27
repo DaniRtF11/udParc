@@ -111,3 +111,15 @@
 .contenedorFormulario {
     @apply flex justify-center mt-8;
 }
+
+.repAudio{
+    @apply mt-10
+}
+
+.tituloAudio{
+    @apply text-[#1B1EE0] text-xl font-bold p-4;
+}
+
+.reproductor{
+    @apply w-4/6 justify-center items-center inline-block mx-5
+}

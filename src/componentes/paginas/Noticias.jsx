@@ -1,6 +1,6 @@
 /*Noticias.jsx*/
 import '../styles.css'
-import Title from '../reusables/Title'
+import TitlePages from '../reusables/TitlePages'
 import BotonHome from '../reusables/BotonHome';
 
 const Noticias = () => {
@@ -8,7 +8,7 @@ const Noticias = () => {
         <html className='fondoPaginas2'>
             <div className='componenteTitlePaginas'>
                 <BotonHome />
-                <div className='margenTitulo'><Title text="NOTICIAS"/></div>
+                <div className='margenTitulo'><TitlePages text="NOTICIAS"/></div>
             </div>
         </html>
     );

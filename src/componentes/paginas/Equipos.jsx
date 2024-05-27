@@ -1,6 +1,6 @@
 // src/componentes/paginas/Equipos.jsx
 import '../styles.css';
-import Title from '../reusables/Title';
+import TitlePages from '../reusables/TitlePages';
 import BotonHome from '../reusables/BotonHome';
 import Equipo from '../reusables/Equipo';
 import equiposData from '../../assets/data/equipos.json'; // Ajusta la ruta según la estructura de tu proyecto
@@ -10,7 +10,7 @@ const Equipos = () => {
         <div className='fondoPaginas'>
             <div className='componenteTitlePaginas'>
                 <BotonHome />
-                <div className='margenTitulo'><Title text="EQUIPOS"/></div>
+                <div className='margenTitulo'><TitlePages text="EQUIPOS"/></div>
             </div>
             <div className='equipos-container'>
                 {equiposData.map((equipo, index) => (
