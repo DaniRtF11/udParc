@@ -9,13 +9,12 @@ import Boton from '../reusables/Boton';
 
 
 const Home = () => {
-    const [imageIndex, setImageIndex] = useState(1); // Comenzamos en 1
-    const totalImages = 6; // Total de imágenes en la carpeta
+    const [imageIndex, setImageIndex] = useState(1);
+    const totalImages = 7; // imágenes en la carpeta
     const imageFiles = Array.from({ length: totalImages }, (_, index) => `/img/fondo/fondo${index + 1}.jpg`);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            // Avanza al siguiente índice de imagen
             setImageIndex(prevIndex => (prevIndex % totalImages) + 1);
         }, 5000);
 
