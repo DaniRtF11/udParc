@@ -51,10 +51,6 @@ const FormularioContacto = () => {
                         <label htmlFor="ultimosEquipos" className="block text-gray-700 text-sm font-bold mb-2">Últimos Equipos:</label>
                         <textarea id="ultimosEquipos" name="ultimosEquipos" className="textareaContacto" required></textarea>
                     </div>
-                    <div className="mb-4">
-                        <label htmlFor="observaciones" className="block text-gray-700 text-sm font-bold mb-2">Observaciones:</label>
-                        <textarea id="observaciones" name="observaciones" className="textareaContacto"></textarea>
-                    </div>
                 </>
             )}
 

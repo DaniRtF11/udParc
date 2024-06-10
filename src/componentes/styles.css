@@ -1,7 +1,7 @@
 /*styles.css*/
 
 .fondoTitulo {
-    @apply bg-slate-100/75 h-24 w-fit flex items-center justify-center rounded-xl
+    @apply bg-slate-100/75 h-24 w-fit flex items-center justify-center rounded-xl -mt-32;
 }
 
 .titulo {
@@ -24,39 +24,43 @@
     @apply bg-[#1B1EE0] text-white;
 }
 
-.todasOpciones{
+.todasOpciones {
     @apply -mt-10
 }
 
-.imgEscudo{
-    @apply  size-40
+.imgEscudo {
+    @apply size-40 -mt-10;
 }
 
-.textoTry{
-    @apply text-red-500 text-5xl
+.imgRRSS {
+    @apply flex gap-2 mt-32 justify-center;
 }
 
-.bgTry{
-    @apply bg-green-400
+.RedesImagen {
+    @apply h-14
 }
 
-.componenteTitlePaginas{
-    @apply mt-4 ml-7 flex justify-start  items-center
+.componenteTitlePaginas {
+    @apply mt-4 ml-7 flex justify-start items-center
 }
 
-.fondoPaginas{
-    @apply bg-gradient-to-b from-white via-blue-100 to-blue-500 h-full
+.fondoPaginas {
+    @apply bg-gradient-to-b from-white via-blue-100 to-blue-500;
 }
 
-.fondoPaginas2{
-    @apply bg-gradient-to-b from-white via-blue-100 to-blue-500 h-screen
+.fondoPaginasScreen {
+    @apply h-screen;
 }
 
-.btnHome{
-    @apply  w-16 
+.fondoPaginasAuto {
+    @apply h-auto;
 }
 
-.margenTitulo{
+.btnHome {
+    @apply w-16
+}
+
+.margenTitulo {
     @apply ml-5
 }
 
@@ -112,14 +116,122 @@
     @apply flex justify-center mt-8;
 }
 
-.repAudio{
-    @apply mt-10
+.repAudio {
+    @apply mt-10 items-center justify-center flex
 }
 
-.tituloAudio{
-    @apply text-[#1B1EE0] text-xl font-bold p-4;
+.repAudioContainer{
+    @apply my-20
 }
 
-.reproductor{
-    @apply w-4/6 justify-center items-center inline-block mx-5
+.tituloAudio {
+    @apply text-[#1B1EE0] text-3xl font-bold p-4 flex items-center justify-center -mb-8;
+}
+
+.containderVideos{
+    @apply grid grid-cols-2 gap-4
+}
+
+.tituloRepVideo {
+    @apply mt-5 text-[#1B1EE0] text-xl font-bold px-4;
+}
+
+.tituloVideo {
+    @apply mx-4 bg-slate-100/75 rounded-l w-fit text-[#1B1EE0] text-xl items-center flex px-3 mb-2 mt-6;
+
+}
+.videoPlayer {
+    @apply mx-8 mb-10
+}
+
+
+.repVideo {
+    @apply mt-5 mx-8;
+}
+
+
+
+.reproductor {
+    @apply w-4/6 justify-center items-center inline-block mx-5 flex
+}
+
+
+
+.footer {
+    @apply text-white text-center bottom-0 w-full 
+}
+
+.contenedorNoticias {
+    @apply mx-10 my-10;
+}
+
+.filtroCategoria {
+    @apply flex items-center justify-center my-4;
+}
+
+.filtroCategoria label {
+    @apply mr-2 text-lg text-[#1B1EE0];
+}
+
+.filtroCategoria select {
+    @apply p-2 rounded border border-gray-300;
+}
+
+.noticia {
+    @apply flex items-center justify-between mb-8 p-4 bg-slate-100/75 rounded shadow-md
+}
+
+.noticia .texto {
+    @apply flex-1;
+}
+
+.noticia .imagen {
+    @apply w-1/4;
+}
+
+.titutloNotica {
+    @apply rounded-l w-fit text-[#1B1EE0] text-4xl items-center flex px-3 mb-2 font-bold;
+}
+
+.subtituloNotica {
+    @apply ml-4 rounded-l w-fit text-[#1B1EE0] text-2xl items-center flex px-3 mb-2;
+}
+
+.cuerpoNoticia {
+    @apply ml-8 text-left text-[#1B1EE0] text-lg mr-20;
+}
+
+.imgNoticia {
+    @apply w-full h-auto rounded;
+}
+
+.icono {
+    @apply text-[#1B1EE0] size-36 mx-24
+}
+
+.iconosContenedor {
+    @apply flex justify-center items-center mt-10
+}
+
+.galeria {
+    @apply grid grid-cols-4 gap-4 mx-5;
+}
+
+.imgGalery {
+    @apply w-full;
+    @apply transition-transform duration-300 ease-in;
+}
+
+.imgGalery:hover {
+    @apply transform scale-110;
+}
+
+.imgGalery--large {
+    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50;
+    @apply max-w-3xl w-auto max-h-[3xl] h-auto;
+    @apply p-4 bg-slate-100 shadow-lg;
+}
+
+.bigImage {
+    @apply fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-40;
 }

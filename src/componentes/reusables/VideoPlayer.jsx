@@ -1,11 +1,21 @@
-/*VideoPlayer.jsx*/
-import ReactPlayer from 'react-player'
-import '../../componentes/styles.css'
-const VideoPlayer = () => {
-    return(
-        <div>
-            <ReactPlayer url="/video/resumen_ia_canbu.mp4" controls light="/img/portadaVideos/resumenCanBu.jpeg" playing/>
-        </div>        
+import React from 'react';
+import ReactPlayer from 'react-player';
+import '../styles.css';
+
+const VideoPlayer = ({ videos }) => {
+    return (
+        <div className='repVideo'>
+            <div className="containderVideos">
+                {videos.map((videoData, index) => (
+                    <div key={index}>
+                        <h2 className='tituloVideo'>{videoData.titulo}</h2>
+                        <div className="videoPlayer">
+                            <ReactPlayer url={videoData.video} controls light={videoData.portada} playing />
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 }
 

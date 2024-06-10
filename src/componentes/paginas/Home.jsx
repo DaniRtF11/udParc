@@ -1,11 +1,12 @@
 /*Home.jsx*/
-
 import '../styles.css'
 import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import Title from '../reusables/Title';
 import Escudo from './componentes_Home/Escudo';
 import Boton from '../reusables/Boton';
+import SocialMedia from './componentes_Home/SocialMedia'
+
 
 
 const Home = () => {
@@ -23,20 +24,21 @@ const Home = () => {
     }, [totalImages]); // Asegúrate de que el efecto se ejecute cuando cambie totalImages
 
     return (
-        <div className="h-screen fondo" style={{ backgroundImage: `url(${imageFiles[imageIndex - 1]})` }}>
-            <div className="flex flex-col">
+        <div className="fondo" style={{ backgroundImage: `url(${imageFiles[imageIndex - 1]})` }}>
+            <div>
                 <div className='compTitulo'>
-                    <Title text="UD PARC"/>
+                    <Title text="UD PARC" />
                 </div>
                 <div className="flex flex-col compTitulo">
-                    <Link to="/noticias"><Boton text="NOTICIAS"/></Link>
-                    <Link to="/equipos"><Boton text="EQUIPOS"/></Link>
-                    <Link to="/multimedia"><Boton text="MULTIMEDIA"/></Link>
-                    <Link to="/contacto"><Boton text="CONTACTO"/></Link>
+                    <Link to="/noticias"><Boton text="NOTICIAS" /></Link>
+                    <Link to="/equipos"><Boton text="EQUIPOS" /></Link>
+                    <Link to="/multimedia"><Boton text="MULTIMEDIA" /></Link>
+                    <Link to="/contacto"><Boton text="CONTACTO" /></Link>
                 </div>
                 <div className='compTitulo'>
                     <Escudo />
                 </div>
+                <SocialMedia />
             </div>
         </div>
     );

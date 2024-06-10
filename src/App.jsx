@@ -1,4 +1,4 @@
-/*App.jsx*/
+/* App.jsx */
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
@@ -8,9 +8,11 @@ import Noticias from './componentes/paginas/Noticias';
 import Equipos from './componentes/paginas/Equipos';
 import Multimedia from './componentes/paginas/Multimedia';
 import Contacto from './componentes/paginas/Contacto';
-
+import useFullHeight from './hooks/useFullHeight'
 
 function App() {
+  useFullHeight();
+
   return (
     <Router>
       <Routes>
