@@ -5,6 +5,7 @@ import BotonHome from '../reusables/BotonHome';
 import FormularioContacto from '../reusables/FormularioContacto.jsx';
 import Footer from '../reusables/Footer';
 import useFullHeight from '../../hooks/useFullHeight';
+import InformacionContacto from '../reusables/InformacionContacto.jsx';
 
 
 const Contacto = () => {
@@ -15,8 +16,9 @@ const Contacto = () => {
                 <BotonHome />
                 <div className='margenTitulo'><TitlePages text="CONTACTO" /></div>
             </div>
-            <div className='contenedorFormulario'>
+            <div className='contenedorCompContacto'>
                 <FormularioContacto />
+                <InformacionContacto />
             </div>
             <Footer />
         </div>

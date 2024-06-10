@@ -37,9 +37,11 @@ const Multimedia = () => {
                 </div>
             </div>
             <SelectMultimedia setActiveSection={setActiveSection} />
-            {activeSection === 'images' && <GaleriaFotos />}
-            {activeSection === 'videos' && <VideoPlayer videos={videos} />}
-            {activeSection === 'audio' && <ReproductorAudio text="HIMNO UD PARC" />}
+            <div className='iconosMulimedia'>
+                {activeSection === 'images' && <GaleriaFotos />}
+                {activeSection === 'videos' && <VideoPlayer videos={videos} />}
+                {activeSection === 'audio' && <ReproductorAudio text="HIMNO UD PARC" />}
+            </div>
             <Footer />
         </div>
     );

@@ -15,15 +15,15 @@ const SelectMultimedia = ({ setActiveSection }) => {
     return (
         <div className="iconosContenedor">
             <IoMdImages
-                className={`icono ${selectedIcon === 'images' ? 'iconoSelect' : ''}`}
+                className={`icono ${selectedIcon === 'images' ? 'iconoSelect text-lg' : 'text-xl'}`}
                 onClick={() => handleIconClick('images')}
             />
             <FaVideo
-                className={`icono ${selectedIcon === 'videos' ? 'iconoSelect' : ''}`}
+                className={`icono ${selectedIcon === 'images' ? 'iconoSelect text-lg' : 'text-xl'}`}
                 onClick={() => handleIconClick('videos')}
             />
             <IoMusicalNotesSharp
-                className={`icono ${selectedIcon === 'audio' ? 'iconoSelect' : ''}`}
+                className={`icono ${selectedIcon === 'images' ? 'iconoSelect text-lg' : 'text-xl'}`}
                 onClick={() => handleIconClick('audio')}
             />
         </div>

@@ -4,6 +4,10 @@
     @apply bg-slate-100/75 h-24 w-fit flex items-center justify-center rounded-xl -mt-32;
 }
 
+.botonesHome{
+    @apply flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4
+}
+
 .titulo {
     @apply text-[#1B1EE0] text-7xl font-bold text-center p-4;
 }
@@ -76,6 +80,16 @@
     @apply grid grid-cols-3 gap-4;
 }
 
+@media (max-width: 1025px) {
+    .contenidoEquipo {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+    }
+
+    .espacioFoto {
+        order: -1; /* Colocar la foto del equipo al principio en pantallas pequeñas */
+    }
+}
+
 .espacioFoto {
     @apply w-11/12 mx-5 col-span-1;
 }
@@ -96,8 +110,12 @@
     @apply list-disc list-inside;
 }
 
+.contenedorCompContacto {
+    @apply flex flex-col md:flex-row space-x-0 md:space-x-8 items-center justify-center
+}
+
 .formularioContacto {
-    @apply max-w-lg mx-auto p-6 bg-slate-100 bg-opacity-55 rounded-lg shadow-md my-10;
+    @apply p-6 bg-slate-100 bg-opacity-55 rounded-lg shadow-md my-10;
 }
 
 .inputContacto {
@@ -112,8 +130,20 @@
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-5;
 }
 
-.contenedorFormulario {
-    @apply flex justify-center mt-8;
+.contenedorInformacion{
+    @apply flex flex-col w-fit px-10 h-fit bg-slate-100 bg-opacity-55 rounded-lg shadow-md my-10
+}
+
+.iconoContacto{
+    @apply text-[#1B1EE0] size-8 mr-5
+}
+
+.divInfo{
+    @apply flex items-center my-5
+}
+
+.textoInfoContact{
+    @apply text-black
 }
 
 .repAudio {
@@ -130,6 +160,12 @@
 
 .containderVideos{
     @apply grid grid-cols-2 gap-4
+}
+
+@media (max-width: 1340px) {
+    .containderVideos {
+        @apply grid-cols-1 items-center justify-center; /* Cambiar a una sola columna en pantallas pequeñas */
+    }
 }
 
 .tituloRepVideo {
@@ -178,7 +214,7 @@
 }
 
 .noticia {
-    @apply flex items-center justify-between mb-8 p-4 bg-slate-100/75 rounded shadow-md
+    @apply flex flex-col md:flex-row mb-8 p-4 bg-slate-100/75 rounded shadow-md;
 }
 
 .noticia .texto {
@@ -186,7 +222,7 @@
 }
 
 .noticia .imagen {
-    @apply w-1/4;
+    @apply w-full md:w-1/4 mt-4 md:mt-0;
 }
 
 .titutloNotica {
@@ -205,6 +241,7 @@
     @apply w-full h-auto rounded;
 }
 
+
 .icono {
     @apply text-[#1B1EE0] size-36 mx-24
 }
@@ -215,11 +252,23 @@
 }
 
 .iconosContenedor {
-    @apply flex justify-center items-center my-10
+    @apply flex justify-around items-center
 }
 
 .galeria {
-    @apply grid grid-cols-4 gap-4 mx-5;
+    @apply grid gap-4 mx-5;
+}
+
+@media (min-width: 640px) {
+    .galeria {
+        @apply grid-cols-1;
+    }
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        @apply grid-cols-4;
+    }
 }
 
 .imgGalery {

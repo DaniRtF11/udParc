@@ -29,7 +29,7 @@ const Home = () => {
                 <div className='compTitulo'>
                     <Title text="UD PARC" />
                 </div>
-                <div className="flex flex-col compTitulo">
+                <div className="compTitulo botonesHome">
                     <Link to="/noticias"><Boton text="NOTICIAS" /></Link>
                     <Link to="/equipos"><Boton text="EQUIPOS" /></Link>
                     <Link to="/multimedia"><Boton text="MULTIMEDIA" /></Link>
