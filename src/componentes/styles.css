@@ -209,8 +209,13 @@
     @apply text-[#1B1EE0] size-36 mx-24
 }
 
+.iconoSelect{
+    @apply text-slate-100 size-36 mx-24 bg-[#1B1EE0] rounded-lg p-2
+
+}
+
 .iconosContenedor {
-    @apply flex justify-center items-center mt-10
+    @apply flex justify-center items-center my-10
 }
 
 .galeria {
